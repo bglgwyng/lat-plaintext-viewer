@@ -90,7 +90,7 @@ fn main() {
             let (truncated, line_count) = truncate_to_line_boundary(&output, max_chars);
             let next_line = 1 + line_count;
             println!("{}", truncated);
-            println!("#more:{}", next_line);
+            println!("{{: #more:{} :}}", next_line);
         }
         _ => {
             println!("{}", output);
